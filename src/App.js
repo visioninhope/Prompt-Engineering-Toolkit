@@ -291,7 +291,6 @@ function App() {
 
     const runPrompt = async (modelId, promptId) => {
         const model = modelConfigs.find(m => m.id === modelId);
-        const prompt = model.prompts.find(p => p.id === promptId);
         let messages = [];
 
         if (promptId === model.prompts[0].id && useGlobalPrompt) {
